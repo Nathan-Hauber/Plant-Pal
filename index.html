@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Plant Manager</h1>
+        <button id="addPlantButton" class="add-button">Add New Plant</button>
+    </header>
+    <div class="container">
+        <h2>Your Plants</h2>
+        <ul id="plantList"></ul>
+    </div>
+
+    <!-- Modal for adding plants -->
+    <div id="plantModal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Add a New Plant</h3>
+            <form id="plantForm">
+                <label for="plantName">Plant Name:</label>
+                <input type="text" id="plantName" required>
+
+                <label for="plantType">Plant Type:</label>
+                <input type="text" id="plantType" required>
+
+                <label for="plantNotes">Notes:</label>
+                <textarea id="plantNotes"></textarea>
+
+                <button type="submit" class="submit-button">Save Plant</button>
+                <button type="button" id="closeModal" class="close-button">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer with navigation buttons -->
+    <footer class="footer">
+        <button class="footer-button" onclick="location.href='index.html'">Home</button>
+        <button class="footer-button" onclick="location.href='feed.html'">Feed</button>
+        <button class="footer-button" onclick="location.href='profile.html'">Profile</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

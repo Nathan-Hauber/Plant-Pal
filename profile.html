@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Plant Manager</h1>
+        <!--<button id="addPlantButton" class="add-button">Add New Plant</button> -->
+    </header>
+    
+    <div class="container">
+        <h2>Profile</h2>
+
+        <!-- Account Info Section -->
+        <div class="account-info">
+            <div class="account-item">
+                <span class="label">Account ID:</span>
+                <span id="accountId">12345</span> <!-- Replace with dynamic value -->
+            </div>
+            <div class="account-item">
+                <span class="label">Number of Plants:</span>
+                <span id="plantCount">10</span> <!-- Replace with dynamic value -->
+            </div>
+        </div>
+
+        <!-- Settings Section -->
+        <div class="settings">
+            <h3>Settings</h3>
+            
+            <!-- Push Notifications Toggle -->
+            <div class="setting-item">
+                <label for="pushNotifications">Send Push Notifications:</label>
+                <input type="checkbox" id="pushNotifications">
+            </div>
+
+            <!-- Account Visibility Toggle -->
+            <div class="setting-item">
+                <label for="accountPublic">Account Public:</label>
+                <input type="checkbox" id="accountPublic">
+            </div>
+        </div>
+
+        <ul id="plantList"></ul>
+    </div>
+
+    <!-- Footer with navigation buttons -->
+    <footer class="footer">
+        <button class="footer-button" onclick="location.href='index.html'">Home</button>
+        <button class="footer-button" onclick="location.href='feed.html'">Feed</button>
+        <button class="footer-button" onclick="location.href='profile.html'">Profile</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
